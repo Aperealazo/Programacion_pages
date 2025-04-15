@@ -1,4 +1,5 @@
 const frases = [
+    "🥚Semana santa es para reconciliarse con Dios o con mi Ex; by Elias-Exequiel",
     "🧠 Se ha eliminado un bug mental.",
     "🪛 Sistema operativo del profe actualizado con café.",
     "🔋 Nivel de energía: 86% – Recargando lógica y memes.",
