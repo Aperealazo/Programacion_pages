@@ -3,6 +3,37 @@ body {
   color: #c9d1d9;
   font-family: 'Fira Code', monospace;
 }
+/*prub tema D/L*/
+body.light-mode {
+  background-color: #ffffff;
+  color: #111;
+}
+
+body.light-mode .section-title {
+  color: #0d6efd;
+  background: linear-gradient(to right, #f0f0f0, transparent);
+}
+
+body.light-mode .card-custom {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+body.light-mode .navbar {
+  background-color: #e9ecef;
+}
+
+body.light-mode .navbar a {
+  color: #111;
+}
+
+body.light-mode a {
+  color: #0d6efd;
+}
+body.light-mode #toggleTheme {
+  border-color: #333;
+  color: #333;
+}
 
 .section-title {
   border-left: 4px solid #58a6ff;
@@ -208,7 +239,7 @@ footer {
   opacity: 1;
   transform: scale(1.1);
 }
-
+/*Chiostes malos*/
 .easter-message {
   margin-top: 10px;
   font-family: 'Courier New', monospace;
@@ -217,7 +248,14 @@ footer {
   font-size: 1rem;
   animation: blinkGlow 2s infinite;
 }
-
+body.light-mode .easter-message {
+  color: #b85c00;
+  text-shadow: 0 0 5px #ffcc80;
+}
+body.light-mode .easter-btn {
+  opacity: 0.9;
+  color: #333;
+}
 .d-none {
   display: none;
 }
