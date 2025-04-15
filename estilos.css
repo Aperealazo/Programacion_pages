@@ -1,0 +1,223 @@
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Fira Code', monospace;
+}
+
+.section-title {
+  border-left: 4px solid #58a6ff;
+  padding-left: 12px;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #1f2937, transparent);
+  cursor: pointer;
+}
+
+.card-custom {
+  position: relative;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.8s ease both, popIn 0.5s ease both;
+  animation-delay: var(--delay, 0s);
+}
+
+.card-custom:hover {
+  transform: scale(1.015);
+}
+
+/* Borde animado tipo neón */
+.card-custom::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #f8c471, #f39c12, #e67e22, #f8c471);
+  background-size: 300% 300%;
+  animation: neonBorder 3s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes neonBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Efecto tipo carpeta MacOS */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  color: #79c0ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #1f6feb;
+  text-decoration: underline;
+}
+
+h1::before {
+  content: "🧑‍💻 ";
+}
+
+footer {
+  border-top: 1px solid #30363d;
+  padding-top: 1rem;
+  margin-top: 4rem;
+}
+
+.collapse-section {
+  display: none;
+}
+.show {
+  display: flex !important;
+}
+
+.navbar {
+  background-color: #161b22;
+  margin-bottom: 2rem;
+}
+.navbar a {
+  color: #c9d1d9;
+}
+.navbar a:hover {
+  color: #58a6ff;
+}
+
+/* Animación de texto máquina de escribir */
+.typing-title {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid #58a6ff;
+  white-space: nowrap;
+  animation: typingLoop 8s steps(24, end) infinite, blink-caret 0.75s step-end infinite;
+  width: 0;
+}
+
+@keyframes typingLoop {
+  0% { width: 0ch; }
+  40% { width: 24ch; }
+  60% { width: 24ch; }
+  80% { width: 0ch; }
+  100% { width: 0ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #58a6ff; }
+}
+
+/* Glow para títulos con atención */
+.attention-glow {
+  animation: glowPulse 2s infinite ease-in-out;
+  color: #00ffff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  50% {
+    transform: scale(1.03);
+    text-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
+  }
+}
+/*footeer estilo */
+.typing-footer {
+  font-family: monospace;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  width: 0; /* Esto es clave */
+  animation: typing 5s steps(50, end) forwards, blink 0.8s step-end infinite;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* Animación de escritura */
+.console-effect {
+  font-family: 'Courier New', monospace;
+  color: #00ff99; /* Verde consola */
+  background-color: black;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #00ff99;
+  white-space: pre; /* Para mantener los espacios y saltos */
+}
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+/*Estilos msj*/
+.easter-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.easter-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.easter-message {
+  margin-top: 10px;
+  font-family: 'Courier New', monospace;
+  color: #f9d423;
+  text-shadow: 0 0 8px #f9d423;
+  font-size: 1rem;
+  animation: blinkGlow 2s infinite;
+}
+
+.d-none {
+  display: none;
+}
