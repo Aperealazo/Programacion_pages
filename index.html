@@ -1,168 +1,186 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recursos Programación II</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recursos Programación II</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="estilos.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap" rel="stylesheet"/>
 </head>
 <body class="container py-4">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand typing-title" href="#">📘 Programación II........</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#intro">Introducción</a></li>
-          <li class="nav-item"><a class="nav-link" href="#conversion">Conversión</a></li>
-          <li class="nav-item"><a class="nav-link" href="#poo">POO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-          <button id="toggleTheme" class="btn btn-sm btn-outline-light ms-3">🌙 Modo Oscuro</button>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <br><br><br>
-  <h1 class="text-center mb-5">Recursos de Clase – Programación II</h1>
-
-  <!-- Introducción a Java -->
-  <h2 class="section-title attention-glow" onclick="toggleSection('intro')">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand typing-title" href="#">📘 Programación II........</a>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#intro">Introducción</a></li>
+<li class="nav-item"><a class="nav-link" href="#conversion">Conversión</a></li>
+<li class="nav-item"><a class="nav-link" href="#poo">POO</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+<button class="btn btn-sm btn-outline-light ms-3" id="toggleTheme">🌙 Modo Oscuro</button>
+</ul>
+</div>
+</div>
+</nav>
+<br/><br/><br/>
+<h1 class="text-center mb-5">Recursos de Clase – Programación II</h1>
+<!-- Introducción a Java -->
+<h2 class="section-title attention-glow" onclick="toggleSection('intro')">
     🔰 Introducción a Java <span class="fs-6 d-block mt-1">(¡Hacé clic para ver el contenido!)</span>
-  </h2>  <div id="intro" class="row collapse-section mb-5">
-    <div class="col-md-4 d-flex" style="--delay: 0.1s;"">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">📘 Teoría</h5>
-        <ul class="list-unstyled">
-          <li>📄 <a href="https://docs.google.com/document/d/1tslCqrtqcPmbkvQjrZNAWcRw61TtcuSq/edit?usp=sharing" target="_blank">01.0 - JAVA HISTORIA</a></li>
-        <li>📄 <a href="https://docs.google.com/document/d/1KoFeYjrgmO5Ghgyd8bONkX_lynYZmVSoW9QzI6pB87I/edit?usp=sharing" target="_blank">01.1 - JAVA INTRODUCCIÓN</a></li>
-        <li>📄 <a href="https://docs.google.com/document/d/16jDwyvDWl_Q89anCgrhm8kbZql4X3AX9/edit?usp=sharing" target="_blank">01.1.1 - JAVA | INSTRUCTIVO</a></li>
-        <li>📄 <a href="https://docs.google.com/document/d/1IxvMP-AB0MDAqyZAfq6Eca3vEexKJKjSjqNBEWX9OaM/edit?usp=sharing" target="_blank">01.2 - JAVA | TIPOS DE DATOS</a></li>
-        <li>📄 <a href="https://docs.google.com/document/d/1nCt98pN0pr92ywXYnDHA2yT-4zSDdbsy7bMRYpfDlt0/edit?usp=sharing" target="_blank">01.2.1 - JAVA | ¿Scanner?</a></li>
-        <li>📄 <a href="https://docs.google.com/document/d/1Yt4UAggwsS73XAPDW4Y2t4GkeynHNlNG1jQCWhK0h0k/edit?usp=sharing" target="_blank">01.2.2 - JAVA | ¿Random?</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex"style="--delay: 0.5s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">💻 Ejemplos</h5>
-        <ul class="list-unstyled">
-          <li>✅ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejemplo 1: Primer Programa</a></li>
-          <li>✅ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejemplo 2: Variables y Tipos</a></li>
-          <li>✅ <a href="Ejemplo-Clases/ConcatenacionTexto.java" target="_blank">Ejemplo 3: Concatenación</a></li>
-          <li>✅ <a href="Ejemplo-Clases/EntradaDeDatos.java" target="_blank">Ejemplo 4: Entrada de Datos</a></li>
-          <li>✅ <a href="Ejemplo-Clases/Condicionales" target="_blank">Ejemplo 5: Condicionales</a></li>
-          <li>✅ <a href="Ejemplo-Clases/Bucles" target="_blank">Ejemplo 6: Bucles</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex"style="--delay: 0.8s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">✍️ Tareas</h5>
-        <ul class="list-unstyled">
-          <li>🖊️ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejercicio: Hola Mundo</a></li>
-          <li>📄 <a href="https://docs.google.com/document/d/197Jj-0qkYLfQORIxvMjSFOuFhDOM5oP1/edit?usp=sharing" target="_blank">PDF Ejercicios 25-03</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- Conversión de Datos -->
-  <h2 class="section-title attention-glow" onclick="toggleSection('conversion')">🔄 Conversión de Tipos de Datos |  Metodo Scanner</h2>
-  <div id="conversion" class="row collapse-section mb-5">
-    <div class="col-md-6 d-flex" style="--delay: 0.1s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">📘 Teoría</h5>
-        <ul class="list-unstyled">
-          <li>📄 Tipos de Datos y Conversiones (clase oral)</li>
-          <li>📄 Entrada de texto y números (observaciones prácticas)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-6 d-flex"style="--delay: 0.5s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">💻 Ejemplos & Tareas</h5>
-        <ul class="list-unstyled">
-          <li>🔢 <a href="Ejemplo-Clases/Conversion_Datos/ParseoDatos.java" target="_blank">Parseo de Datos</a></li>
-          <li>🎲 <a href="Ejemplo-Clases/LibreriaRandom" target="_blank">Librería Random</a></li>
-          <li>📄 <a href="https://docs.google.com/document/d/1RRfFrvHuLn2hfll0lPg1hcVPLYDlNQRJ/edit?usp=sharing" target="_blank">Ejercicios 27-03 (PDF)</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Programación Orientada a Objetos -->
-  <h2 class="section-title attention-glow" onclick="toggleSection('poo')">☕ Programación Orientada a Objetos (POO)</h2>
-  <div id="poo" class="row collapse-section mb-5">
-    <div class="col-md-6 d-flex"style="--delay: 0.1s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">📘 Teoría</h5>
-        <ul class="list-unstyled">
-          <li>📘 <a href="https://docs.google.com/document/d/1ehwOvbfz_Qor9xM1GPexBVoYSYJF0XY3/edit?usp=sharing" target="_blank">Introducción a la POO</a></li>
-          <li>📘 <a href="https://docs.google.com/document/d/1argteP9DzCS_erEmnzjK536YpWNIEdYfpiH7o4XjihQ/edit?usp=sharing" target="_blank">Ampliación teórica</a></li>
-          <li>📘 <a href="https://docs.google.com/document/d/1Evx7Uo6Ximd2l77SzdY7LhKYCr3EZvIvL2bH5Nh-spQ/edit?usp=sharing" target="_blank">¿ARREGLOS 😶?</a></li>
-
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-6 d-flex"style="--delay: 0.5s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">✍️ Tareas</h5>
-        <ul class="list-unstyled">
-          <li>📆 <a href="https://docs.google.com/document/d/1laEHmI5n88DhCel93EacpsK955VmdSkx-mb2utGwFwU/edit?usp=sharing" target="_blank">Tarea: Jueves 03-04</a></li>
-          <li>📆 <a href="https://docs.google.com/document/d/15biim3gGLuFIG_HryXZWvCa_wscg_OL85lJQIKMN6PI/edit?usp=sharing" target="_blank">Tarea: Martes 08-04</a></li>
-          <li>📆 <a href="https://docs.google.com/document/d/1YxbYQWg6glRYRTl_aifyswQZaplBfEeeFzDEIGYtOSE/edit?usp=sharing" target="_blank">Tarea: Martes 22-04</a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Módulo FAQ -->
-  <h2 class="section-title attention-glow" onclick="toggleSection('faq')">❓ Preguntas Frecuentes</h2>
-  <div id="faq" class="row collapse-section mb-5">
-    <div class="col-12"style="--delay: 0.1s;">
-      <div class="p-3 card-custom w-100">
-        <h5 class="mb-3">💬 Dudas comunes</h5>
-        <ul class="list-unstyled">
-          <li><strong>¿Cómo ejecuto los programas?</strong><br>Usá NetBeans y presioná <code>Shift + F6</code>.</li>
-          <li><strong>Error "main class not found"</strong><br>Verificá el método <code>public static void main</code>.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <footer class="mt-5 text-center">
-    <p class="console-effect"></p>
-    <p class="footer-update">
-      🛠️ Última actualización: <strong>abril 2025</strong><br>
-      <span class="footer-punchline">📄 Código validado. Chistes malos del profe también incluidos.
+</h2> <div class="row collapse-section mb-5" id="intro">
+<div "="" class="col-md-4 d-flex" style="--delay: 0.1s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">📘 Teoría</h5>
+<ul class="list-unstyled">
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="1tslCqrtqcPmbkvQjrZNAWcRw61TtcuSq" data-titulo="01.0 - JAVA HISTORIA" href="#" target="_blank">01.0 - JAVA HISTORIA</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="1KoFeYjrgmO5Ghgyd8bONkX_lynYZmVSoW9QzI6pB87I" data-titulo="01.1 - JAVA INTRODUCCIÓN" href="#" target="_blank">01.1 - JAVA INTRODUCCIÓN</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="16jDwyvDWl_Q89anCgrhm8kbZql4X3AX9" data-titulo="01.1.1 - JAVA | INSTRUCTIVO" href="#" target="_blank">01.1.1 - JAVA | INSTRUCTIVO</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="1IxvMP-AB0MDAqyZAfq6Eca3vEexKJKjSjqNBEWX9OaM" data-titulo="01.2 - JAVA | TIPOS DE DATOS" href="#" target="_blank">01.2 - JAVA | TIPOS DE DATOS</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="1nCt98pN0pr92ywXYnDHA2yT-4zSDdbsy7bMRYpfDlt0" data-titulo="01.2.1 - JAVA | ¿Scanner?" href="#" target="_blank">01.2.1 - JAVA | ¿Scanner?</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="1Yt4UAggwsS73XAPDW4Y2t4GkeynHNlNG1jQCWhK0h0k" data-titulo="01.2.2 - JAVA | ¿Random?" href="#" target="_blank">01.2.2 - JAVA | ¿Random?</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 d-flex" style="--delay: 0.5s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">💻 Ejemplos</h5>
+<ul class="list-unstyled">
+<li>✅ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejemplo 1: Primer Programa</a></li>
+<li>✅ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejemplo 2: Variables y Tipos</a></li>
+<li>✅ <a href="Ejemplo-Clases/ConcatenacionTexto.java" target="_blank">Ejemplo 3: Concatenación</a></li>
+<li>✅ <a href="Ejemplo-Clases/EntradaDeDatos.java" target="_blank">Ejemplo 4: Entrada de Datos</a></li>
+<li>✅ <a href="Ejemplo-Clases/Condicionales" target="_blank">Ejemplo 5: Condicionales</a></li>
+<li>✅ <a href="Ejemplo-Clases/Bucles" target="_blank">Ejemplo 6: Bucles</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 d-flex" style="--delay: 0.8s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">✍️ Tareas</h5>
+<ul class="list-unstyled">
+<li>🖊️ <a href="Ejemplo-Clases/HolaQuinto.java" target="_blank">Ejercicio: Hola Mundo</a></li>
+<li>📄 <a class="tema-link" data-contenedor="intro" data-id="197Jj-0qkYLfQORIxvMjSFOuFhDOM5oP1" data-titulo="PDF Ejercicios 25-03" href="#" target="_blank">PDF Ejercicios 25-03</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Conversión de Datos -->
+<h2 class="section-title attention-glow" onclick="toggleSection('conversion')">🔄 Conversión de Tipos de Datos |  Metodo Scanner</h2>
+<div class="row collapse-section mb-5" id="conversion">
+<div class="col-md-6 d-flex" style="--delay: 0.1s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">📘 Teoría</h5>
+<ul class="list-unstyled">
+<li>📄 Tipos de Datos y Conversiones (clase oral)</li>
+<li>📄 Entrada de texto y números (observaciones prácticas)</li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 d-flex" style="--delay: 0.5s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">💻 Ejemplos &amp; Tareas</h5>
+<ul class="list-unstyled">
+<li>🔢 <a href="Ejemplo-Clases/Conversion_Datos/ParseoDatos.java" target="_blank">Parseo de Datos</a></li>
+<li>🎲 <a href="Ejemplo-Clases/LibreriaRandom" target="_blank">Librería Random</a></li>
+<li>📄 <a class="tema-link" data-contenedor="conversion" data-id="1RRfFrvHuLn2hfll0lPg1hcVPLYDlNQRJ" data-titulo="Ejercicios 27-03 (PDF)" href="#" target="_blank">Ejercicios 27-03 (PDF)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Programación Orientada a Objetos -->
+<h2 class="section-title attention-glow" onclick="toggleSection('poo')">☕ Programación Orientada a Objetos (POO)</h2>
+<div class="row collapse-section mb-5" id="poo">
+<div class="col-md-6 d-flex" style="--delay: 0.1s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">📘 Teoría</h5>
+<ul class="list-unstyled">
+<li>📘 <a class="tema-link" data-contenedor="poo" data-id="1ehwOvbfz_Qor9xM1GPexBVoYSYJF0XY3" data-titulo="Introducción a la POO" href="#" target="_blank">Introducción a la POO</a></li>
+<li>📘 <a class="tema-link" data-contenedor="poo" data-id="1argteP9DzCS_erEmnzjK536YpWNIEdYfpiH7o4XjihQ" data-titulo="Ampliación teórica" href="#" target="_blank">Ampliación teórica</a></li>
+<li>📘 <a class="tema-link" data-contenedor="poo" data-id="1Evx7Uo6Ximd2l77SzdY7LhKYCr3EZvIvL2bH5Nh-spQ" data-titulo="¿ARREGLOS 😶?" href="#" target="_blank">¿ARREGLOS 😶?</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 d-flex" style="--delay: 0.5s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">✍️ Tareas</h5>
+<ul class="list-unstyled">
+<li>📆 <a class="tema-link" data-contenedor="poo" data-id="1laEHmI5n88DhCel93EacpsK955VmdSkx-mb2utGwFwU" data-titulo="Tarea: Jueves 03-04" href="#" target="_blank">Tarea: Jueves 03-04</a></li>
+<li>📆 <a class="tema-link" data-contenedor="poo" data-id="15biim3gGLuFIG_HryXZWvCa_wscg_OL85lJQIKMN6PI" data-titulo="Tarea: Martes 08-04" href="#" target="_blank">Tarea: Martes 08-04</a></li>
+<li>📆 <a class="tema-link" data-contenedor="poo" data-id="1YxbYQWg6glRYRTl_aifyswQZaplBfEeeFzDEIGYtOSE" data-titulo="Tarea: Martes 22-04" href="#" target="_blank">Tarea: Martes 22-04</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Módulo FAQ -->
+<h2 class="section-title attention-glow" onclick="toggleSection('faq')">❓ Preguntas Frecuentes</h2>
+<div class="row collapse-section mb-5" id="faq">
+<div class="col-12" style="--delay: 0.1s;">
+<div class="p-3 card-custom w-100">
+<h5 class="mb-3">💬 Dudas comunes</h5>
+<ul class="list-unstyled">
+<li><strong>¿Cómo ejecuto los programas?</strong><br/>Usá NetBeans y presioná <code>Shift + F6</code>.</li>
+<li><strong>Error "main class not found"</strong><br/>Verificá el método <code>public static void main</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="mt-5 text-center">
+<p class="console-effect"></p>
+<p class="footer-update">
+      🛠️ Última actualización: <strong>abril 2025</strong><br/>
+<span class="footer-punchline">📄 Código validado. Chistes malos del profe también incluidos.
 
       </span>
-    </p>
-    
-    <!-- Huevo de pascua -->
-    <button id="easterBtn" class="easter-btn">🐣</button>
-    <p id="easterMessage" class="easter-message d-none"></p>  </footer>
-  <!-- indexa a .js-->
-  <script src="consola-footer.js"></script>
-  <script src="easteregg.js"></script>
-  <script src="modo-tema.js"></script>
-
-
-
-  
-  <script>
+</p>
+<!-- Huevo de pascua -->
+<button class="easter-btn" id="easterBtn">🐣</button>
+<p class="easter-message d-none" id="easterMessage"></p> </footer>
+<!-- indexa a .js-->
+<script src="consola-footer.js"></script>
+<script src="easteregg.js"></script>
+<script src="modo-tema.js"></script>
+<script>
     function toggleSection(id) {
       const section = document.getElementById(id);
       section.classList.toggle('show');
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal Teoría -->
+<div aria-hidden="true" class="modal fade" id="modalTemaGenerico" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modalDialog" style="max-width: 95vw; width: 95vw;">
+<div class="modal-content" id="modalContent" style="color: #111; background-color: #fff;">
+<div class="modal-header justify-content-between align-items-center flex-wrap gap-2">
+<h5 class="modal-title text-truncate mb-1" id="modalTemaTitulo" style="max-width: 60vw; white-space: nowrap; overflow: hidden;">📘 Módulo:</h5>
+<div class="d-flex flex-wrap justify-content-end gap-1">
+<button class="btn btn-outline-primary btn-sm btn-mode animate-nav" id="btn-prev" title="Anterior">⏮️</button>
+<button class="btn btn-outline-primary btn-sm btn-mode animate-nav" id="btn-next" title="Siguiente">⏭️</button>
+<button class="btn btn-outline-secondary btn-sm btn-mode animate-nav" id="zoomInBtn" title="Zoom +">➕</button>
+<button class="btn btn-outline-secondary btn-sm btn-mode animate-nav" id="zoomOutBtn" title="Zoom -">➖</button>
+<button class="btn btn-outline-dark btn-sm btn-mode animate-nav" id="toggleThemeBtn" title="Cambiar tema">🌙</button>
+<a class="btn btn-outline-success btn-sm btn-mode animate-nav" href="#" id="abrirNuevaPestana" target="_blank" title="Abrir en otra pestaña">🌐</a>
+<button aria-label="Cerrar" class="btn-close" data-bs-dismiss="modal" id="cerrarModalBtn" type="button"></button>
+</div>
+</div>
+<div class="modal-body p-3 position-relative" id="iframeWrapper" style="height: 90vh; background-color: #fff;">
+<div class="d-flex flex-column justify-content-center align-items-center w-100 h-100" id="loader">
+<img alt="Cargando..." id="gif-loader" src="" style="width: 200px; max-width: 90%; height: auto; animation: pulseZoom 1.8s ease-in-out;"/>
+<div class="mt-3 text-center loading-text bg-secondary text-white rounded px-3 py-2">
+            ⏳ Cargando...
+          </div>
+</div>
+<iframe height="100%" id="modalTemaIframe" style="border: none; transform: scale(1); transform-origin: center center; display: none; background-color: #fff;" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+<script src="visor-temas.js"></script>
 </body>
 </html>
