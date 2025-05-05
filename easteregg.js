@@ -1,5 +1,4 @@
 const frases = [
-    "🥚Semana santa es para reconciliarse con Dios o con mi Ex; by Elias-Exequiel",
     "👀 Hoy no hay errores... salvo el de haberte elegido.",
     "🚫 No me tira ni una excepción... vos sí lo hiciste.",
     "💔 Esta clase no se cae, como se cayó nuestra relación.",
